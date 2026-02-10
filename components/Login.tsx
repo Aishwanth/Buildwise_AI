@@ -41,7 +41,8 @@ const Login: React.FC<LoginProps> = ({ onLoginSuccess }) => {
 
       onLoginSuccess(user);
     } catch (err: any) {
-      setError(err.message || 'Login failed');
+      console.error('Login error detail:', err);
+      setError(err.message || JSON.stringify(err) || 'Login failed');
     } finally {
       setIsLoading(false);
     }
@@ -70,7 +71,8 @@ const Login: React.FC<LoginProps> = ({ onLoginSuccess }) => {
 
       onLoginSuccess(user);
     } catch (err: any) {
-      setError(err.message || 'Sign up failed');
+      console.error('Sign-up error detail:', err);
+      setError(err.message || JSON.stringify(err) || 'Sign up failed');
     } finally {
       setIsLoading(false);
     }

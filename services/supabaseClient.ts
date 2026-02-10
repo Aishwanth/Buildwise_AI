@@ -4,7 +4,7 @@ import { createClient } from '@supabase/supabase-js';
 const supabaseUrl = (typeof import.meta !== 'undefined' ? (import.meta as any).env?.VITE_SUPABASE_URL : undefined) || process.env?.VITE_SUPABASE_URL || '';
 const supabaseAnonKey = (typeof import.meta !== 'undefined' ? (import.meta as any).env?.VITE_SUPABASE_ANON_KEY : undefined) || process.env?.VITE_SUPABASE_ANON_KEY || '';
 
-const isConfigMissing = !supabaseUrl || !supabaseAnonKey;
+const isConfigMissing = !supabaseUrl || supabaseUrl === 'undefined' || !supabaseAnonKey || supabaseAnonKey === 'undefined' || supabaseAnonKey === 'placeholder';
 
 if (isConfigMissing) {
   console.warn('⚠️ SUPABASE CREDENTIALS MISSING: VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY must be set in your environment variables for database features to work.');
