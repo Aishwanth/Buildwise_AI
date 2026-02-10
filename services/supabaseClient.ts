@@ -5,10 +5,11 @@ const supabaseUrl = (typeof import.meta !== 'undefined' ? (import.meta as any).e
 const supabaseAnonKey = (typeof import.meta !== 'undefined' ? (import.meta as any).env?.VITE_SUPABASE_ANON_KEY : undefined) || process.env?.VITE_SUPABASE_ANON_KEY || '';
 
 if (!supabaseUrl || !supabaseAnonKey) {
-  throw new Error('Missing Supabase credentials. Set VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY in your .env.local');
+  console.warn('⚠️ SUPABASE CREDENTIALS MISSING: VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY must be set in your environment variables for database features to work.');
 }
 
-export const supabase = createClient(supabaseUrl, supabaseAnonKey);
+// Ensure createClient doesn't fail if strings are empty (it will just fail gracefully on requests)
+export const supabase = createClient(supabaseUrl || 'https://placeholder.supabase.co', supabaseAnonKey || 'placeholder');
 
 // Database types for TypeScript support
 export interface WorkEntry {
