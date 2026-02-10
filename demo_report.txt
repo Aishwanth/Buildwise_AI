@@ -1,0 +1,35 @@
+============================================================
+CONSTRUCTION PLANNING REPORT
+============================================================
+
+BUILDING OVERVIEW
+------------------------------------------------------------
+Number of floors: 1
+Floor height: 3.0 m
+Total floor area: 1525.30 m²
+Total wall length: 199.52 m
+
+ROOM DETAILS
+------------------------------------------------------------
+
+Room_1:
+  Area: 1525.30 m²
+  Perimeter: 276.01 m
+  Corners: 13
+
+ESTIMATED MATERIAL QUANTITIES
+------------------------------------------------------------
+
+Concrete:
+  Floor slabs: 228.79 m³
+
+Walls:
+  Total wall area: 598.55 m²
+  Estimated bricks: 47,884
+
+Flooring:
+  Tiles required: 1677.83 m²
+
+Doors and Windows:
+  Doors: 1
+  Windows: 0

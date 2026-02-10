@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900">
+  <defs>
+    <linearGradient id="sky-workers" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#43a047" />
+      <stop offset="1" stop-color="#1b5e20" />
+    </linearGradient>
+    <linearGradient id="ground-workers" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c9a066" />
+      <stop offset="1" stop-color="#6d4c41" />
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="900" fill="url(#sky-workers)" />
+  <rect y="600" width="1400" height="300" fill="url(#ground-workers)" />
+  
+  <!-- Worker roles visualization -->
+  <g opacity="0.95">
+    <!-- Mason -->
+    <g>
+      <rect x="100" y="200" width="150" height="200" fill="#ff6f00" opacity="0.9" rx="8" stroke="#fff" stroke-width="2" />
+      <circle cx="175" cy="240" r="20" fill="#ffb74d" stroke="#fff" stroke-width="2" />
+      <rect x="160" y="270" width="30" height="50" fill="#4a90e2" stroke="#fff" stroke-width="1" />
+      <rect x="125" y="280" width="20" height="40" fill="#e8e8e8" stroke="#666" stroke-width="1" />
+      <rect x="180" y="280" width="20" height="40" fill="#e8e8e8" stroke="#666" stroke-width="1" />
+      <circle cx="175" cy="330" r="8" fill="#ffb74d" />
+      <circle cx="175" cy="350" r="8" fill="#ffb74d" />
+      <text x="175" y="380" font-family="Arial" font-size="14" font-weight="bold" fill="#fff" text-anchor="middle">MASON</text>
+      <text x="175" y="410" font-family="Arial" font-size="11" fill="#fff" text-anchor="middle">20 workers</text>
+      <text x="175" y="425" font-family="Arial" font-size="10" fill="#ddd" text-anchor="middle">₹800/day</text>
+    </g>
+    
+    <!-- Helper -->
+    <g>
+      <rect x="300" y="200" width="150" height="200" fill="#2196f3" opacity="0.9" rx="8" stroke="#fff" stroke-width="2" />
+      <circle cx="375" cy="240" r="20" fill="#64b5f6" stroke="#fff" stroke-width="2" />
+      <rect x="360" y="270" width="30" height="50" fill="#4a90e2" stroke="#fff" stroke-width="1" />
+      <rect x="325" y="280" width="20" height="40" fill="#e8e8e8" stroke="#666" stroke-width="1" />
+      <rect x="380" y="280" width="20" height="40" fill="#e8e8e8" stroke="#666" stroke-width="1" />
+      <circle cx="375" cy="330" r="8" fill="#64b5f6" />
+      <circle cx="375" cy="350" r="8" fill="#64b5f6" />
+      <text x="375" y="380" font-family="Arial" font-size="14" font-weight="bold" fill="#fff" text-anchor="middle">HELPER</text>
+      <text x="375" y="410" font-family="Arial" font-size="11" fill="#fff" text-anchor="middle">15 workers</text>
+      <text x="375" y="425" font-family="Arial" font-size="10" fill="#ddd" text-anchor="middle">₹600/day</text>
+    </g>
+    
+    <!-- Steel Worker -->
+    <g>
+      <rect x="500" y="200" width="150" height="200" fill="#9c27b0" opacity="0.9" rx="8" stroke="#fff" stroke-width="2" />
+      <circle cx="575" cy="240" r="20" fill="#ce93d8" stroke="#fff" stroke-width="2" />
+      <rect x="560" y="270" width="30" height="50" fill="#4a90e2" stroke="#fff" stroke-width="1" />
+      <rect x="525" y="280" width="20" height="40" fill="#e8e8e8" stroke="#666" stroke-width="1" />
+      <rect x="580" y="280" width="20" height="40" fill="#e8e8e8" stroke="#666" stroke-width="1" />
+      <circle cx="575" cy="330" r="8" fill="#ce93d8" />
+      <circle cx="575" cy="350" r="8" fill="#ce93d8" />
+      <text x="575" y="380" font-family="Arial" font-size="14" font-weight="bold" fill="#fff" text-anchor="middle">STEEL</text>
+      <text x="575" y="398" font-family="Arial" font-size="12" font-weight="bold" fill="#fff" text-anchor="middle">WORKER</text>
+      <text x="575" y="428" font-family="Arial" font-size="11" fill="#fff" text-anchor="middle">8 workers</text>
+      <text x="575" y="443" font-family="Arial" font-size="10" fill="#ddd" text-anchor="middle">₹1000/day</text>
+    </g>
+    
+    <!-- Carpenter -->
+    <g>
+      <rect x="700" y="200" width="150" height="200" fill="#f57c00" opacity="0.9" rx="8" stroke="#fff" stroke-width="2" />
+      <circle cx="775" cy="240" r="20" fill="#ffb74d" stroke="#fff" stroke-width="2" />
+      <rect x="760" y="270" width="30" height="50" fill="#4a90e2" stroke="#fff" stroke-width="1" />
+      <rect x="725" y="280" width="20" height="40" fill="#e8e8e8" stroke="#666" stroke-width="1" />
+      <rect x="780" y="280" width="20" height="40" fill="#e8e8e8" stroke="#666" stroke-width="1" />
+      <circle cx="775" cy="330" r="8" fill="#ffb74d" />
+      <circle cx="775" cy="350" r="8" fill="#ffb74d" />
+      <text x="775" y="380" font-family="Arial" font-size="14" font-weight="bold" fill="#fff" text-anchor="middle">CARPENTER</text>
+      <text x="775" y="410" font-family="Arial" font-size="11" fill="#fff" text-anchor="middle">10 workers</text>
+      <text x="775" y="425" font-family="Arial" font-size="10" fill="#ddd" text-anchor="middle">₹900/day</text>
+    </g>
+    
+    <!-- Supervisor -->
+    <g>
+      <rect x="900" y="200" width="150" height="200" fill="#d32f2f" opacity="0.9" rx="8" stroke="#fff" stroke-width="2" />
+      <circle cx="975" cy="240" r="20" fill="#ef5350" stroke="#fff" stroke-width="2" />
+      <rect x="960" y="270" width="30" height="50" fill="#4a90e2" stroke="#fff" stroke-width="1" />
+      <rect x="925" y="280" width="20" height="40" fill="#e8e8e8" stroke="#666" stroke-width="1" />
+      <rect x="980" y="280" width="20" height="40" fill="#e8e8e8" stroke="#666" stroke-width="1" />
+      <circle cx="975" cy="330" r="8" fill="#ef5350" />
+      <circle cx="975" cy="350" r="8" fill="#ef5350" />
+      <text x="975" y="380" font-family="Arial" font-size="14" font-weight="bold" fill="#fff" text-anchor="middle">SUPERVISOR</text>
+      <text x="975" y="410" font-family="Arial" font-size="11" fill="#fff" text-anchor="middle">5 workers</text>
+      <text x="975" y="425" font-family="Arial" font-size="10" fill="#ddd" text-anchor="middle">₹1200/day</text>
+    </g>
+  </g>
+  
+  <!-- Workforce statistics -->
+  <g opacity="0.9">
+    <rect x="1100" y="200" width="250" height="200" fill="#fff" rx="8" />
+    <text x="1225" y="230" font-family="Arial" font-size="16" font-weight="bold" fill="#333" text-anchor="middle">Total Workforce</text>
+    <line x1="1110" y1="245" x2="1340" y2="245" stroke="#ddd" stroke-width="1" />
+    
+    <text x="1125" y="275" font-family="Arial" font-size="13" font-weight="bold" fill="#333">Total Workers: 58</text>
+    <text x="1125" y="300" font-family="Arial" font-size="12" fill="#666">Daily Payroll: ₹51,400</text>
+    <text x="1125" y="325" font-family="Arial" font-size="12" fill="#666">Monthly: ₹15,42,000</text>
+    <text x="1125" y="355" font-family="Arial" font-size="13" font-weight="bold" fill="#d32f2f">Project Total: ₹69,39,000</text>
+  </g>
+  
+  <!-- Title -->
+  <text x="700" y="70" font-family="Arial" font-size="48" font-weight="bold" fill="#fff" text-anchor="middle">
+    Workforce Management & Payroll
+  </text>
+</svg>

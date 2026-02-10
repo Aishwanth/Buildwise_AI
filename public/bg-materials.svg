@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900">
+  <defs>
+    <linearGradient id="sky-materials" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9575cd" />
+      <stop offset="1" stop-color="#5e35b1" />
+    </linearGradient>
+    <linearGradient id="ground-materials" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c9a066" />
+      <stop offset="1" stop-color="#795548" />
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="900" fill="url(#sky-materials)" />
+  <rect y="600" width="1400" height="300" fill="url(#ground-materials)" />
+  
+  <!-- Material storage yard -->
+  <g opacity="0.95">
+    <!-- Cement stacks -->
+    <g>
+      <text x="200" y="220" font-family="Arial" font-size="14" font-weight="bold" fill="#fff">CEMENT</text>
+      <rect x="150" y="240" width="60" height="80" fill="#a1887f" stroke="#fff" stroke-width="2" />
+      <rect x="220" y="240" width="60" height="80" fill="#a1887f" stroke="#fff" stroke-width="2" />
+      <rect x="290" y="240" width="60" height="80" fill="#a1887f" stroke="#fff" stroke-width="2" />
+      <text x="220" y="350" font-family="Arial" font-size="12" fill="#fff" text-anchor="middle">100 bags</text>
+      <text x="220" y="370" font-family="Arial" font-size="11" fill="#ddd" text-anchor="middle">₹35,000</text>
+    </g>
+    
+    <!-- Sand heap -->
+    <g>
+      <text x="500" y="220" font-family="Arial" font-size="14" font-weight="bold" fill="#fff">SAND</text>
+      <polygon points="450,320 550,320 575,240 425,240" fill="#d4a574" stroke="#fff" stroke-width="2" />
+      <text x="500" y="350" font-family="Arial" font-size="12" fill="#fff" text-anchor="middle">50 cu.m</text>
+      <text x="500" y="370" font-family="Arial" font-size="11" fill="#ddd" text-anchor="middle">₹40,000</text>
+    </g>
+    
+    <!-- Steel storage -->
+    <g>
+      <text x="800" y="220" font-family="Arial" font-size="14" font-weight="bold" fill="#fff">STEEL RODS</text>
+      <rect x="750" y="240" width="100" height="15" fill="#546e7a" stroke="#fff" stroke-width="2" />
+      <rect x="750" y="265" width="100" height="15" fill="#546e7a" stroke="#fff" stroke-width="2" />
+      <rect x="750" y="290" width="100" height="15" fill="#546e7a" stroke="#fff" stroke-width="2" />
+      <text x="800" y="350" font-family="Arial" font-size="12" fill="#fff" text-anchor="middle">5 tons</text>
+      <text x="800" y="370" font-family="Arial" font-size="11" fill="#ddd" text-anchor="middle">₹2,25,000</text>
+    </g>
+    
+    <!-- Bricks -->
+    <g>
+      <text x="1100" y="220" font-family="Arial" font-size="14" font-weight="bold" fill="#fff">BRICKS</text>
+      <g id="brick-stack">
+        <rect x="1070" y="240" width="12" height="24" fill="#d84315" stroke="#fff" stroke-width="0.5" />
+        <rect x="1090" y="240" width="12" height="24" fill="#d84315" stroke="#fff" stroke-width="0.5" />
+        <rect x="1110" y="240" width="12" height="24" fill="#d84315" stroke="#fff" stroke-width="0.5" />
+        <rect x="1080" y="270" width="12" height="24" fill="#d84315" stroke="#fff" stroke-width="0.5" />
+        <rect x="1100" y="270" width="12" height="24" fill="#d84315" stroke="#fff" stroke-width="0.5" />
+      </g>
+      <text x="1100" y="350" font-family="Arial" font-size="12" fill="#fff" text-anchor="middle">10,000 pcs</text>
+      <text x="1100" y="370" font-family="Arial" font-size="11" fill="#ddd" text-anchor="middle">₹80,000</text>
+    </g>
+  </g>
+  
+  <!-- Material tracking dashboard -->
+  <g opacity="0.9">
+    <rect x="150" y="420" width="1100" height="140" fill="#fff" rx="8" />
+    <text x="180" y="450" font-family="Arial" font-size="16" font-weight="bold" fill="#333">Material Inventory & Status</text>
+    <line x1="160" y1="465" x2="1240" y2="465" stroke="#ddd" stroke-width="1" />
+    
+    <!-- Inventory status -->
+    <text x="180" y="495" font-family="Arial" font-size="12" fill="#555">Cement: 100 bags</text>
+    <rect x="350" y="485" width="200" height="15" fill="#e0e0e0" rx="2" />
+    <rect x="350" y="485" width="160" height="15" fill="#4caf50" rx="2" />
+    <text x="560" y="497" font-family="Arial" font-size="11" fill="#555">80% available</text>
+    
+    <text x="180" y="530" font-family="Arial" font-size="12" fill="#555">Steel Rods: 5 tons</text>
+    <rect x="350" y="520" width="200" height="15" fill="#e0e0e0" rx="2" />
+    <rect x="350" y="520" width="140" height="15" fill="#2196f3" rx="2" />
+    <text x="560" y="532" font-family="Arial" font-size="11" fill="#555">70% available</text>
+    
+    <text x="180" y="545" font-family="Arial" font-size="12" fill="#555">Total Material Cost: ₹3,80,000</text>
+    <text x="560" y="545" font-family="Arial" font-size="12" font-weight="bold" fill="#d32f2f">Budget Remaining: ₹1,20,000</text>
+  </g>
+  
+  <!-- Title -->
+  <text x="700" y="70" font-family="Arial" font-size="48" font-weight="bold" fill="#fff" text-anchor="middle">
+    Materials Management & Inventory
+  </text>
+</svg>

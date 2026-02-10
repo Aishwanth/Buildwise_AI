@@ -1,0 +1,169 @@
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+  <!-- Sky Gradient -->
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87CEEB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E0F6FF;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="groundGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#D2B48C;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8B7355;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="buildingGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6B6B;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FF5252;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E63946;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="1920" height="700" fill="url(#skyGradient)"/>
+
+  <!-- Sun -->
+  <circle cx="1700" cy="150" r="80" fill="#FFD700" opacity="0.9"/>
+  <circle cx="1700" cy="150" r="100" fill="#FFA500" opacity="0.2"/>
+
+  <!-- Clouds -->
+  <g opacity="0.7">
+    <ellipse cx="300" cy="100" rx="60" ry="30" fill="white"/>
+    <ellipse cx="350" cy="90" rx="80" ry="35" fill="white"/>
+    <ellipse cx="250" cy="110" rx="50" ry="25" fill="white"/>
+    
+    <ellipse cx="1400" cy="200" rx="70" ry="35" fill="white"/>
+    <ellipse cx="1480" cy="190" rx="90" ry="40" fill="white"/>
+    <ellipse cx="1320" cy="210" rx="60" ry="30" fill="white"/>
+  </g>
+
+  <!-- Ground -->
+  <rect y="700" width="1920" height="380" fill="url(#groundGradient)"/>
+
+  <!-- Building Under Construction - Main Structure -->
+  <rect x="450" y="400" width="350" height="400" fill="url(#buildingGradient)" stroke="#8B4513" stroke-width="2"/>
+
+  <!-- Building Windows -->
+  <g fill="#FFD700" opacity="0.8">
+    <!-- Floor 1 Windows -->
+    <rect x="470" y="480" width="30" height="30" rx="3"/>
+    <rect x="520" y="480" width="30" height="30" rx="3"/>
+    <rect x="570" y="480" width="30" height="30" rx="3"/>
+    <rect x="620" y="480" width="30" height="30" rx="3"/>
+    <rect x="670" y="480" width="30" height="30" rx="3"/>
+    <rect x="720" y="480" width="30" height="30" rx="3"/>
+    
+    <!-- Floor 2 Windows -->
+    <rect x="470" y="550" width="30" height="30" rx="3"/>
+    <rect x="520" y="550" width="30" height="30" rx="3"/>
+    <rect x="570" y="550" width="30" height="30" rx="3"/>
+    <rect x="620" y="550" width="30" height="30" rx="3"/>
+    <rect x="670" y="550" width="30" height="30" rx="3"/>
+    <rect x="720" y="550" width="30" height="30" rx="3"/>
+    
+    <!-- Floor 3 Windows -->
+    <rect x="470" y="620" width="30" height="30" rx="3"/>
+    <rect x="520" y="620" width="30" height="30" rx="3"/>
+    <rect x="570" y="620" width="30" height="30" rx="3"/>
+    <rect x="620" y="620" width="30" height="30" rx="3"/>
+    <rect x="670" y="620" width="30" height="30" rx="3"/>
+    <rect x="720" y="620" width="30" height="30" rx="3"/>
+  </g>
+
+  <!-- Door -->
+  <rect x="600" y="700" width="50" height="100" fill="#654321" stroke="#3E2723" stroke-width="2" rx="3"/>
+  <circle cx="645" cy="750" r="4" fill="#FFD700"/>
+
+  <!-- Scaffolding -->
+  <g stroke="#666" stroke-width="3" fill="none">
+    <!-- Vertical poles -->
+    <line x1="420" y1="500" x2="420" y2="750" stroke-width="4"/>
+    <line x1="820" y1="500" x2="820" y2="750" stroke-width="4"/>
+    
+    <!-- Horizontal beams -->
+    <line x1="420" y1="570" x2="820" y2="570" stroke-width="3"/>
+    <line x1="420" y1="630" x2="820" y2="630" stroke-width="3"/>
+    <line x1="420" y1="700" x2="820" y2="700" stroke-width="3"/>
+    
+    <!-- Diagonal supports -->
+    <line x1="420" y1="570" x2="500" y2="630"/>
+    <line x1="740" y1="570" x2="820" y2="630"/>
+    <line x1="420" y1="630" x2="500" y2="700"/>
+    <line x1="740" y1="630" x2="820" y2="700"/>
+  </g>
+
+  <!-- Ladder -->
+  <g stroke="#8B4513" stroke-width="2">
+    <line x1="340" y1="600" x2="340" y2="750"/>
+    <line x1="370" y1="600" x2="370" y2="750"/>
+    <line x1="340" y1="630" x2="370" y2="630"/>
+    <line x1="340" y1="670" x2="370" y2="670"/>
+    <line x1="340" y1="710" x2="370" y2="710"/>
+  </g>
+
+  <!-- Workers with clipboards - Progress tracking -->
+  <g>
+    <!-- Worker 1 - Pointing at building -->
+    <circle cx="900" cy="680" r="15" fill="#FFB6C1"/>
+    <rect x="890" y="700" width="20" height="30" fill="#FFA500"/>
+    <rect x="885" y="735" width="8" height="25" fill="#8B4513"/>
+    <rect x="907" y="735" width="8" height="25" fill="#8B4513"/>
+    
+    <!-- Clipboard -->
+    <rect x="920" y="705" width="25" height="30" fill="#D3D3D3" stroke="#666" stroke-width="1" rx="2"/>
+    <rect x="922" y="707" width="20" height="12" fill="white"/>
+    <line x1="925" y1="713" x2="939" y2="713" stroke="#333" stroke-width="1"/>
+    <line x1="925" y1="717" x2="939" y2="717" stroke="#333" stroke-width="1"/>
+    
+    <!-- Worker 2 - Taking notes -->
+    <circle cx="1100" cy="685" r="15" fill="#FFB6C1"/>
+    <rect x="1090" y="705" width="20" height="30" fill="#0000FF"/>
+    <rect x="1085" y="740" width="8" height="25" fill="#8B4513"/>
+    <rect x="1107" y="740" width="8" height="25" fill="#8B4513"/>
+    
+    <!-- Clipboard and pen -->
+    <rect x="1120" y="710" width="25" height="30" fill="#D3D3D3" stroke="#666" stroke-width="1" rx="2"/>
+    <rect x="1122" y="712" width="20" height="12" fill="white"/>
+    <line x1="1125" y1="718" x2="1139" y2="718" stroke="#333" stroke-width="1"/>
+    <line x1="1125" y1="722" x2="1139" y2="722" stroke="#333" stroke-width="1"/>
+  </g>
+
+  <!-- Camera on tripod for site documentation -->
+  <g>
+    <!-- Tripod -->
+    <line x1="1200" y1="600" x2="1150" y2="730" stroke="#666" stroke-width="3"/>
+    <line x1="1200" y1="600" x2="1200" y2="740" stroke="#666" stroke-width="3"/>
+    <line x1="1200" y1="600" x2="1250" y2="730" stroke="#666" stroke-width="3"/>
+    
+    <!-- Camera -->
+    <rect x="1185" y="570" width="30" height="35" fill="#333" stroke="#000" stroke-width="2" rx="3"/>
+    <circle cx="1200" cy="582" r="8" fill="#666"/>
+    <rect x="1195" y="560" width="10" height="10" fill="#FFD700"/>
+  </g>
+
+  <!-- Safety equipment signs -->
+  <g>
+    <!-- Hard hat symbol -->
+    <circle cx="200" cy="750" r="20" fill="#FFD700" stroke="#FFA500" stroke-width="2"/>
+    <text x="200" y="760" font-size="24" text-anchor="middle" fill="#333" font-weight="bold">⛑</text>
+    
+    <!-- High visibility vest -->
+    <path d="M 300 720 Q 290 730 285 750 L 305 750 Q 310 730 320 720 L 300 720" fill="#FFD700" stroke="#FF6347" stroke-width="2"/>
+  </g>
+
+  <!-- Progress indicators - Daily work tracking -->
+  <g font-family="Arial" font-weight="bold" font-size="16" fill="#333">
+    <!-- Progress bar background -->
+    <rect x="1300" y="100" width="400" height="40" fill="white" stroke="#333" stroke-width="2" rx="5" opacity="0.9"/>
+    
+    <!-- Progress bar fill (70% complete) -->
+    <rect x="1305" y="105" width="270" height="30" fill="url(#buildingGradient)" rx="3"/>
+    
+    <!-- Progress text -->
+    <text x="1500" y="130" text-anchor="middle" fill="white" font-size="18" font-weight="bold">70% Complete</text>
+  </g>
+
+  <!-- Date indicator for daily work -->
+  <g font-family="Arial" font-weight="bold" font-size="14" fill="white">
+    <rect x="100" y="100" width="280" height="60" fill="#333" stroke="#666" stroke-width="2" rx="8" opacity="0.85"/>
+    <text x="120" y="130" font-size="16" font-weight="bold">Today's Work Update</text>
+    <text x="120" y="155" font-size="13" fill="#FFD700">Feb 15, 2026 | Phase: Structural</text>
+  </g>
+</svg>

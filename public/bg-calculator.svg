@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900">
+  <defs>
+    <linearGradient id="sky-calc" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#667eea" />
+      <stop offset="1" stop-color="#764ba2" />
+    </linearGradient>
+    <linearGradient id="ground-calc" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#daa06d" />
+      <stop offset="1" stop-color="#8b5a3c" />
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="900" fill="url(#sky-calc)" />
+  <rect y="600" width="1400" height="300" fill="url(#ground-calc)" />
+  
+  <!-- Office/Planning area with calculations -->
+  <rect x="150" y="250" width="600" height="400" fill="#f5f5f5" opacity="0.95" rx="10" />
+  
+  <!-- Desk surface -->
+  <rect x="170" y="270" width="560" height="360" fill="#e8e8e8" rx="5" />
+  
+  <!-- Blueprints and documents -->
+  <g opacity="0.9">
+    <rect x="190" y="290" width="200" height="140" fill="#e3f2fd" stroke="#1565c0" stroke-width="2" />
+    <line x1="210" y1="310" x2="370" y2="310" stroke="#1565c0" stroke-width="1" />
+    <line x1="210" y1="330" x2="370" y2="330" stroke="#1565c0" stroke-width="1" />
+    <line x1="210" y1="350" x2="370" y2="350" stroke="#1565c0" stroke-width="1" />
+    <circle cx="230" cy="320" r="4" fill="#ff6f00" />
+    <circle cx="250" cy="320" r="4" fill="#ff6f00" />
+    <circle cx="270" cy="340" r="4" fill="#ff6f00" />
+    
+    <!-- Grid/calculations -->
+    <rect x="410" y="290" width="160" height="140" fill="#fff9c4" stroke="#f57f17" stroke-width="2" />
+    <text x="420" y="315" font-family="monospace" font-size="12" fill="#333">100 sq.yd</text>
+    <text x="420" y="335" font-family="monospace" font-size="12" fill="#333">G+2 floors</text>
+    <text x="420" y="355" font-family="monospace" font-size="12" fill="#333">90 days</text>
+    <text x="420" y="375" font-family="monospace" font-size="12" fill="#333">₹50L budget</text>
+  </g>
+  
+  <!-- Calculator representation -->
+  <g opacity="0.85">
+    <rect x="190" y="460" width="380" height="150" fill="#fff" stroke="#424242" stroke-width="2" rx="5" />
+    <text x="220" y="490" font-family="Arial" font-size="24" font-weight="bold" fill="#333">COST BREAKDOWN</text>
+    <line x1="200" y1="505" x2="560" y2="505" stroke="#ddd" stroke-width="1" />
+    
+    <text x="220" y="535" font-family="Arial" font-size="13" fill="#555">Labor: ₹18L (36%)</text>
+    <rect x="360" y="525" width="150" height="12" fill="#e0e0e0" rx="2" />
+    <rect x="360" y="525" width="54" height="12" fill="#4caf50" rx="2" />
+    
+    <text x="220" y="565" font-family="Arial" font-size="13" fill="#555">Materials: ₹25L (50%)</text>
+    <rect x="360" y="555" width="150" height="12" fill="#e0e0e0" rx="2" />
+    <rect x="360" y="555" width="75" height="12" fill="#2196f3" rx="2" />
+    
+    <text x="220" y="595" font-family="Arial" font-size="13" fill="#555">Overhead: ₹7L (14%)</text>
+    <rect x="360" y="585" width="150" height="12" fill="#e0e0e0" rx="2" />
+    <rect x="360" y="585" width="21" height="12" fill="#ff9800" rx="2" />
+  </g>
+  
+  <!-- Workers with measuring tools -->
+  <g opacity="0.8">
+    <!-- Worker 1 with measuring tape -->
+    <circle cx="900" cy="450" r="15" fill="#ffb74d" />
+    <rect x="890" y="468" width="20" height="50" fill="#4a90e2" />
+    <rect x="875" y="475" width="12" height="40" fill="#e8e8e8" stroke="#666" stroke-width="1" />
+    <rect x="903" y="475" width="12" height="40" fill="#e8e8e8" stroke="#666" stroke-width="1" />
+    <line x1="850" y1="520" x2="950" y2="520" stroke="#ffb74d" stroke-width="4" />
+    
+    <!-- Worker 2 with clipboard -->
+    <circle cx="1050" cy="430" r="15" fill="#ffb74d" />
+    <rect x="1040" y="448" width="20" height="60" fill="#4a90e2" />
+    <rect x="1025" y="455" width="12" height="50" fill="#e8e8e8" stroke="#666" stroke-width="1" />
+    <rect x="1053" y="455" width="12" height="50" fill="#e8e8e8" stroke="#666" stroke-width="1" />
+    <rect x="1045" y="510" width="35" height="50" fill="#fff9c4" stroke="#f57f17" stroke-width="2" />
+    <line x1="1050" y1="520" x2="1070" y2="520" stroke="#333" stroke-width="1" />
+    <line x1="1050" y1="535" x2="1070" y2="535" stroke="#333" stroke-width="1" />
+    <line x1="1050" y1="550" x2="1070" y2="550" stroke="#333" stroke-width="1" />
+  </g>
+  
+  <!-- Title -->
+  <text x="700" y="100" font-family="Arial" font-size="48" font-weight="bold" fill="#fff" text-anchor="middle">
+    Project Calculator & Analysis
+  </text>
+</svg>

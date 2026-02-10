@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#87CEEB" />
+      <stop offset="0.5" stop-color="#E0F6FF" />
+      <stop offset="1" stop-color="#FFD700" />
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#D2B48C" />
+      <stop offset="1" stop-color="#8B7355" />
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+  
+  <!-- Sky background -->
+  <rect width="1400" height="900" fill="url(#sky)" />
+  
+  <!-- Ground -->
+  <rect y="600" width="1400" height="300" fill="url(#ground)" />
+  
+  <!-- Construction site elements -->
+  <g filter="url(#shadow)">
+    <!-- Crane 1 -->
+    <line x1="900" y1="250" x2="900" y2="500" stroke="#444" stroke-width="8" />
+    <line x1="900" y1="260" x2="1100" y2="280" stroke="#FF8C00" stroke-width="6" />
+    <circle cx="900" cy="260" r="15" fill="#FFD700" />
+    <rect x="850" y="480" width="100" height="40" fill="#666" />
+    
+    <!-- Crane 2 -->
+    <line x1="300" y1="300" x2="300" y2="550" stroke="#444" stroke-width="8" />
+    <line x1="300" y1="310" x2="500" y2="330" stroke="#FF8C00" stroke-width="6" />
+    <circle cx="300" cy="310" r="15" fill="#FFD700" />
+    <rect x="250" y="530" width="100" height="40" fill="#666" />
+    
+    <!-- Building frame -->
+    <rect x="100" y="350" width="400" height="300" fill="none" stroke="#555" stroke-width="4" />
+    <line x1="150" y1="350" x2="150" y2="650" stroke="#555" stroke-width="2" />
+    <line x1="200" y1="350" x2="200" y2="650" stroke="#555" stroke-width="2" />
+    <line x1="250" y1="350" x2="250" y2="650" stroke="#555" stroke-width="2" />
+    <line x1="300" y1="350" x2="300" y2="650" stroke="#555" stroke-width="2" />
+    <line x1="350" y1="350" x2="350" y2="650" stroke="#555" stroke-width="2" />
+    <line x1="400" y1="350" x2="400" y2="650" stroke="#555" stroke-width="2" />
+    <line x1="450" y1="350" x2="450" y2="650" stroke="#555" stroke-width="2" />
+    <line x1="100" y1="400" x2="500" y2="400" stroke="#555" stroke-width="2" />
+    <line x1="100" y1="450" x2="500" y2="450" stroke="#555" stroke-width="2" />
+    <line x1="100" y1="500" x2="500" y2="500" stroke="#555" stroke-width="2" />
+    <line x1="100" y1="550" x2="500" y2="550" stroke="#555" stroke-width="2" />
+    <line x1="100" y1="600" x2="500" y2="600" stroke="#555" stroke-width="2" />
+    
+    <!-- Blueprint on table (foreground) -->
+    <rect x="1000" y="600" width="300" height="200" fill="#E8F4F8" stroke="#333" stroke-width="2" rx="5" />
+    <g fill="none" stroke="#1E3A8A" stroke-width="1.5" opacity="0.8">
+      <rect x="1030" y="630" width="80" height="60" />
+      <rect x="1120" y="630" width="80" height="60" />
+      <rect x="1210" y="630" width="60" height="60" />
+      <rect x="1030" y="700" width="240" height="50" />
+      <circle cx="1060" cy="660" r="8" fill="none" />
+      <circle cx="1150" cy="660" r="8" fill="none" />
+      <circle cx="1240" cy="660" r="8" fill="none" />
+    </g>
+    
+    <!-- Measuring tape -->
+    <line x1="1000" y1="750" x2="1150" y2="750" stroke="#FFB703" stroke-width="3" />
+    <circle cx="1010" cy="750" r="8" fill="#FFB703" />
+    <circle cx="1140" cy="750" r="8" fill="#FFB703" />
+    
+    <!-- Yellow safety helmet -->
+    <ellipse cx="950" cy="820" rx="25" ry="20" fill="#FFD700" />
+    <path d="M 930 820 Q 930 840 950 845 Q 970 840 970 820" fill="#FFA500" />
+    <path d="M 945 830 L 955 830" stroke="#333" stroke-width="1.5" />
+  </g>
+  
+  <!-- Workers silhouettes -->
+  <g fill="#333" opacity="0.7">
+    <!-- Worker 1 -->
+    <circle cx="600" cy="520" r="12" />
+    <rect x="592" y="535" width="16" height="35" />
+    <rect x="580" y="540" width="10" height="25" />
+    <rect x="608" y="540" width="10" height="25" />
+    
+    <!-- Worker 2 -->
+    <circle cx="700" cy="510" r="12" />
+    <rect x="692" y="525" width="16" height="45" />
+    <rect x="680" y="530" width="10" height="30" />
+    <rect x="708" y="530" width="10" height="30" />
+    
+    <!-- Worker 3 -->
+    <circle cx="550" cy="530" r="12" />
+    <rect x="542" y="545" width="16" height="35" />
+    <rect x="530" y="550" width="10" height="25" />
+    <rect x="558" y="550" width="10" height="25" />
+  </g>
+  
+  <!-- Text overlay -->
+  <text x="700" y="50" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#fff" text-anchor="middle" opacity="0.9">
+    BuildWise Construction Control Center
+  </text>
+</svg>
