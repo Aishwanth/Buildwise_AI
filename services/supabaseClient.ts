@@ -4,12 +4,17 @@ import { createClient } from '@supabase/supabase-js';
 const supabaseUrl = (typeof import.meta !== 'undefined' ? (import.meta as any).env?.VITE_SUPABASE_URL : undefined) || process.env?.VITE_SUPABASE_URL || '';
 const supabaseAnonKey = (typeof import.meta !== 'undefined' ? (import.meta as any).env?.VITE_SUPABASE_ANON_KEY : undefined) || process.env?.VITE_SUPABASE_ANON_KEY || '';
 
-if (!supabaseUrl || !supabaseAnonKey) {
+const isConfigMissing = !supabaseUrl || !supabaseAnonKey;
+
+if (isConfigMissing) {
   console.warn('⚠️ SUPABASE CREDENTIALS MISSING: VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY must be set in your environment variables for database features to work.');
 }
 
-// Ensure createClient doesn't fail if strings are empty (it will just fail gracefully on requests)
-export const supabase = createClient(supabaseUrl || 'https://placeholder.supabase.co', supabaseAnonKey || 'placeholder');
+// Ensure createClient doesn't fail if strings are empty. 
+// Using current origin as a fallback to avoid DNS lookup failures for non-existent domains.
+export const supabase = createClient(supabaseUrl || (typeof window !== 'undefined' ? window.location.origin : 'https://localhost'), supabaseAnonKey || 'placeholder');
+
+export { isConfigMissing };
 
 // Database types for TypeScript support
 export interface WorkEntry {
